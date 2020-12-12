@@ -85,10 +85,20 @@ if __name__ == '__main__':
     # Add a strategy
     cerebro.addstrategy(TestStrategy)
 
+    # Datas are in a subfolder of the samples. Need to find where the script is
+    # because it could have been called from anywhere
+    modpath = os.path.dirname(os.path.abspath(sys.argv[0]))
+    datapath = os.path.join(modpath, 'DataFeed/TSLA.csv')
+
     # Create a Data Feed
-    data = bt.feeds.YahooFinanceData(dataname='TSLA',
-                                     fromdate=datetime.datetime(2020, 1, 1),
-                                     todate=datetime.datetime(2020, 12, 31))
+    data = bt.feeds.YahooFinanceCSVData(
+        dataname=datapath,
+        # Do not pass values before this date
+        fromdate=datetime.datetime(2020, 1, 1),
+        # Do not pass values before this date
+        todate=datetime.datetime(2020, 12, 31),
+        # Do not pass values after this date
+        reverse=False)
 
     # Add the Data Feed to Cerebro
     cerebro.adddata(data)
