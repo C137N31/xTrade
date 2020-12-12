@@ -6,7 +6,7 @@ Platform: Backtrader
 
 Database: SQLite3
 
-IDE: VS Code 1.51.1
+IDE: VS Code 1.52.0
 
 Language: Python 3.9.1 64bit / Cython / C++
 
