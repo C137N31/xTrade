@@ -1,19 +1,21 @@
-# xTrade: Algorithmic Trade System for stocks, futures, currencies, options, bitcoins
+# xTrade
 
-# Platform: Backtrader
-# Database: SQLite3
-# IDE: VS Code 1.51.1
+Algorithmic Trade System for stocks, futures, currencies, options, bitcoins
 
-# Language: Python 3.9.1 64bit / Cython / C++
-# Library: NumPy + SciPy + pandas + TensorFlow + Keras + PyTorch + PyQL + TA-Lib + SymPy + PyMC3 + MlFinLab
+Platform: Backtrader
+Database: SQLite3
+IDE: VS Code 1.51.1
 
-# Docker / pip / Git
+Language: Python 3.9.1 64bit / Cython / C++
+Library: NumPy + SciPy + pandas + TensorFlow + Keras + PyTorch + PyQL + TA-Lib + SymPy + PyMC3 + MlFinLab
 
-# Data Provider: Intrinio / Quandl / Norgate Data
-# Historical Data (day/hour/minute) / Realtime Data (minute/snapshot)
+Docker / pip / Git
 
-# Broker: InteractiveBrokers
+Data Provider: Intrinio / Quandl / Norgate Data
+Historical Data (day/hour/minute) / Realtime Data (minute/snapshot)
 
-# Return Analyzer: Pyfolio + Alphalens + Zipline + Empirical
+Broker: InteractiveBrokers
 
-# Server: 8 core CPU + 32GB RAM + 500GB SSD + NVIDIA
+Return Analyzer: Pyfolio + Alphalens + Zipline + Empirical
+
+Server: 8 core CPU + 32GB RAM + 500GB SSD + NVIDIA
